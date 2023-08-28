@@ -1,4 +1,4 @@
-ARG BUILD_FROM=debian:12.1-slim
+ARG BUILD_FROM=ghcr.io/hassio-addons/debian-base/amd64:7.1.0
 ARG BUILD_ARCH=amd64
 
 FROM ${BUILD_FROM}
