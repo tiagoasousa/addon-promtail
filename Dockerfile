@@ -18,11 +18,9 @@ RUN apt-get update && apt-get install -t bullseye-backports -qy libsystemd-dev
 RUN set -eux; \
     apt-get update; \
     apt-get install -qy --no-install-recommends \ 
-        tar=1.34+dfsg-1 \
+        tar=1.34+dfsg-1 yq tz-data \
         ; \
     update-ca-certificates; \
-    yq; \
-    tz-data; \
     \
     case "${BUILD_ARCH}" in \
         amd64)  BINARCH='amd64' ;; \
