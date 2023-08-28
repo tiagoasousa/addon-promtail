@@ -21,6 +21,8 @@ RUN set -eux; \
         tar=1.34+dfsg-1 \
         ; \
     update-ca-certificates; \
+    yq; \
+    tz-data; \
     \
     case "${BUILD_ARCH}" in \
         amd64)  BINARCH='amd64' ;; \
