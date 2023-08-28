@@ -18,7 +18,7 @@ RUN apt-get update && apt-get install -t bullseye-backports -qy libsystemd-dev
 RUN set -eux; \
     apt-get update; \
     apt-get install -qy --no-install-recommends \ 
-        tar=1.34+dfsg-1 yq tz-data \
+        tar=1.34+dfsg-1 tzdata \
         ; \
     update-ca-certificates; \
     \
