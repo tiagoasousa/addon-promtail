@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/debian-base/amd64:6.2.7
+ARG BUILD_FROM=ghcr.io/hassio-addons/debian-base/amd64:7.1.0
 ARG BUILD_ARCH=amd64
 
 # https://github.com/mdegat01/promtail-journal/releases
